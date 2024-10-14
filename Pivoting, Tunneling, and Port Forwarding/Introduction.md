@@ -1,0 +1,6 @@
+- The most important things to do when landing on a host for the first time is to check our
+	- privilege level
+	- network connections
+	- potential VPN or other remote access software
+	- If a host has more than one network adapter, we can likely use it to move to a different network segment
+- Pivoting is essentially the idea of moving to other networks through a compromised host to find more targets on different network segments.
