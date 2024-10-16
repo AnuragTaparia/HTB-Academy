@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7536daf255cb360f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,7 +51,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTimeReverse"
               }
             }
           },
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
+                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
+                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Introduction.md"
+                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md"
               }
             }
           }
@@ -143,14 +156,20 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e3cfecdab51660f",
+  "active": "7536daf255cb360f",
   "lastOpenFiles": [
+    "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
+    "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+    "images/Remote or Reverse Port Forwarding with SSH.png",
+    "images/Setting up to Pivot.png",
+    "images/SSH Local Port Forwarding.png",
+    "images",
     "Pivoting, Tunneling, and Port Forwarding/Pivoting_Tunneling_And_Port_Forwarding_Module_Cheat_Sheet.pdf",
     "Pivoting, Tunneling, and Port Forwarding",
-    "Welcome.md",
-    "Pivoting, Tunneling, and Port Forwarding/Introduction.md"
+    "Welcome.md"
   ]
 }
