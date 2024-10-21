@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2e3cfecdab51660f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7536daf255cb360f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "scp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md"
+                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md"
               }
             }
           }
@@ -160,10 +147,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7536daf255cb360f",
+  "active": "05dc12090345d35b",
   "lastOpenFiles": [
-    "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
+    "Pivoting, Tunneling, and Port Forwarding/Pivoting Around Obstacles.md",
+    "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
+    "images/skill assessment.drawio.png",
+    "Pivoting, Tunneling, and Port Forwarding/skill assessment.drawio.crswap",
     "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+    "Pivoting, Tunneling, and Port Forwarding/Branching Out Our Tunnels.md",
+    "Pivoting, Tunneling, and Port Forwarding/skill assessment.drawio",
+    "Pivoting, Tunneling, and Port Forwarding/Playing Pong with Socat.md",
+    "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
+    "Pivoting, Tunneling, and Port Forwarding/Double Pivots.md",
+    "images/proxychains for reverse chisel.png",
+    "images/proxychains for chisel.png",
+    "images/Netsh.png",
+    "images/RPivot.png",
+    "images/plink.png",
     "images/Remote or Reverse Port Forwarding with SSH.png",
     "images/Setting up to Pivot.png",
     "images/SSH Local Port Forwarding.png",
