@@ -4,22 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "58b05ed5860873c9",
+        "id": "14046c6039d2676b",
         "type": "tabs",
         "children": [
           {
-            "id": "7536daf255cb360f",
+            "id": "c2f43fe88759fa77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
+                "file": "Active Directory Enumeration & Attacks/Scenario.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Scenario"
+            }
+          },
+          {
+            "id": "e66047b77590a876",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory Enumeration & Attacks/Initial Enumeration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Initial Enumeration"
+            }
+          },
+          {
+            "id": "e0edc2978be930e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory Enumeration & Attacks/Sighting In, Hunting For A User.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sighting In, Hunting For A User"
+            }
+          },
+          {
+            "id": "dfcc2de28f21453a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory Enumeration & Attacks/Spray Responsibly.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spray Responsibly"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -39,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTimeReverse"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -48,13 +95,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scp",
+                "query": "likely username",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
+                "file": "Active Directory Enumeration & Attacks/Initial Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +144,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Initial Enumeration"
             }
           },
           {
@@ -102,10 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
+                "file": "Active Directory Enumeration & Attacks/Initial Enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Initial Enumeration"
             }
           },
           {
@@ -116,7 +171,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pivoting, Tunneling, and Port Forwarding/skill assessment.md"
-              }
+                "file": "Active Directory Enumeration & Attacks/Initial Enumeration.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Initial Enumeration"
             }
           }
         ]
@@ -147,14 +206,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "05dc12090345d35b",
+  "active": "dfcc2de28f21453a",
   "lastOpenFiles": [
-    "Pivoting, Tunneling, and Port Forwarding/Pivoting Around Obstacles.md",
+    "Active Directory Enumeration & Attacks/Sighting In, Hunting For A User.md",
+    "Active Directory Enumeration & Attacks/Spray Responsibly.md",
+    "Active Directory Enumeration & Attacks/Initial Enumeration.md",
+    "Active Directory Enumeration & Attacks/Sniffing out a Foothold.md",
+    "Pivoting, Tunneling, and Port Forwarding/Branching Out Our Tunnels.md",
+    "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
+    "Active Directory Enumeration & Attacks/Scenario.md",
     "Pivoting, Tunneling, and Port Forwarding/skill assessment.md",
+    "Active Directory Enumeration & Attacks",
+    "Pivoting, Tunneling, and Port Forwarding/Pivoting Around Obstacles.md",
     "images/skill assessment.drawio.png",
     "Pivoting, Tunneling, and Port Forwarding/skill assessment.drawio.crswap",
-    "Pivoting, Tunneling, and Port Forwarding/Choosing The Dig Site & Starting Our Tunnels.md",
-    "Pivoting, Tunneling, and Port Forwarding/Branching Out Our Tunnels.md",
     "Pivoting, Tunneling, and Port Forwarding/skill assessment.drawio",
     "Pivoting, Tunneling, and Port Forwarding/Playing Pong with Socat.md",
     "Pivoting, Tunneling, and Port Forwarding/Introduction.md",
